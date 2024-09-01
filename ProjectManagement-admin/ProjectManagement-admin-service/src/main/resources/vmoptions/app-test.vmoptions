@@ -1,0 +1,11 @@
+-XX:+UnlockDiagnosticVMOptions
+-XX:+UnlockExperimentalVMOptions
+-XX:-OmitStackTraceInFastThrow
+-Xlog:gc*=debug:file=${LOG_PATH}/gc%t.log:utctime,level,tags:filecount=50,filesize=100M
+-XX:HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=_LOG_DIR_/heapdump
+-XX:MetaspaceSize=128m
+-XX:MaxMetaspaceSize=512m
+-Xms512m
+-Xmx512m
+-Xss256k

@@ -1,0 +1,10 @@
+-XX:+UnlockDiagnosticVMOptions
+-XX:+UnlockExperimentalVMOptions
+-XX:-OmitStackTraceInFastThrow
+-Xlog:gc*=debug:file=_LOG_DIR_/gc-_DATE_TIME_.log:utctime,level,tags:filecount=50,filesize=100M
+-XX:HeapDumpPath=_LOG_DIR_/heapdump
+-XX:MetaspaceSize=128m
+-XX:MaxMetaspaceSize=512m
+-Xms512m
+-Xmx512m
+-Xss256k
