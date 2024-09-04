@@ -7,19 +7,31 @@ const router = createRouter({
     {
       path: '/',
       name: 'login',
-      component: () => import('@/views/login/index.vue'),
+      component: () => import('@/views/beforeLogin/index.vue'),
       children: [
           {
             path: '',
             name: 'loginComponents',
-            component: () => import('@/components/login/Login.vue')
-          }
+            component: () => import('@/components/BeforeLogin/login.vue')
+          },
+        {
+          path: '/register',
+          name: 'registerComponents',
+          component: () => import('@/components/BeforeLogin/register.vue')
+        }
       ]
     },
     {
       path: '/index',
       name: 'index',
       component: () => import('@/views/index.vue'),
+      children: [
+        {
+          path: '',
+          name: 'MenuComponents',
+          component: () => import('@/components/Menu/menu.vue')
+        }
+      ]
     }
   ]
 })

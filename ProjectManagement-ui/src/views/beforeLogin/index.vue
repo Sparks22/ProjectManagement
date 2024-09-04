@@ -15,23 +15,23 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted } from 'vue';
-onMounted(() => {
-  document.body.style.height = "100vh";
-  document.body.style.overflow = "hidden";
-  document.body.style.width = "100vw";
-  document.body.style.display = "flex";
-  document.body.style.margin = "0";
-});
-
-onUnmounted(() => {
-  // 恢复默认样式
-  document.body.style.height = "";
-  document.body.style.overflow = "";
-  document.body.style.width = "";
-  document.body.style.display = "";
-  document.body.style.margin = "";
-});
+// import { onMounted, onUnmounted } from 'vue';
+// onMounted(() => {
+//   document.body.style.height = "100vh";
+//   document.body.style.overflow = "hidden";
+//   document.body.style.width = "100vw";
+//   document.body.style.display = "flex";
+//   document.body.style.margin = "0";
+// });
+//
+// onUnmounted(() => {
+//   // 恢复默认样式
+//   document.body.style.height = "";
+//   document.body.style.overflow = "";
+//   document.body.style.width = "";
+//   document.body.style.display = "";
+//   document.body.style.margin = "";
+// });
 </script>
 
 <style scoped>

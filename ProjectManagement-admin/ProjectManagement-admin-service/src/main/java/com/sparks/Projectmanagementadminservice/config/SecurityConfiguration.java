@@ -69,7 +69,7 @@ public class SecurityConfiguration {
                         .loginProcessingUrl("/auth/login")
                         // 登录成功后的处理
                         .successHandler(this::onAuthenticationSuccess)
-                        .successForwardUrl("/index")
+                        //.successForwardUrl("/index")
                         // 登录失败后的处理
                         .failureHandler(this::onAuthenticationFailure)
                 )

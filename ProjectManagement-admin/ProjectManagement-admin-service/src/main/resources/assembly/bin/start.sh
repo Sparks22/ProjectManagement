@@ -93,14 +93,14 @@ MODEL=""
 #    done
 #}
 #SERVER_PORT=`sed -nr '/port: [0-9]+/ s/.*port: +([0-9]+).*/\1/p' config/application.yml`
-SERVER_NAME=$(awk -F ':' '{if ($1=="spring.application.name") print $2}' config/application.yml | tr -d ' ')
-SERVER_PORT=$(awk '/^spring\.server\.port:/ {print $2}' config/application.yml | tr -d ' ')
+SERVER_NAME=$(awk -F ':' '{if ($1=="spring.application.name") print $2}' ../conf/config/application.yml | tr -d ' ')
+SERVER_PORT=$(awk '/^spring\.server\.port:/ {print $2}' ../conf/config/application.yml | tr -d ' ')
 if [ -z "${SERVER_NAME}" ]; then
-    SERVER_NAME="jnote-service"
+    SERVER_NAME="ProjectManagement-admin-service"
     echo "----<<SERVER_NAME>>----set---->>${SERVER_NAME}"
 fi
 if [ -z "${SERVER_PORT}" ]; then
-    SERVER_PORT=8888
+    SERVER_PORT=9600
     echo "----<<SERVER_PORT>>----set---->>${SERVER_PORT}"
 fi
 

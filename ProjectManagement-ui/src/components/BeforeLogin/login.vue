@@ -29,7 +29,7 @@
         <el-button @click="login()" type="primary" style="width: 100%;height: 50px;font-size: 20px;">登录</el-button>
       </div>
       <div style="margin-top: 20px;">
-        <el-button type="primary" style="width: 100%;height: 50px;font-size: 20px;">注册</el-button>
+        <el-button @click="router.push('/register')" color="#626aef" :dark="isDark" style="width: 100%;height: 50px;font-size: 20px;">注册</el-button>
       </div>
     </div>
   </div>
@@ -73,6 +73,6 @@ const login = () => {
  */
 :deep(.input_up  .el-input__inner){
   font-family:"Microsoft" !important;
-  font-size:20px !important;
+  font-size:15px !important;
 }
 </style>

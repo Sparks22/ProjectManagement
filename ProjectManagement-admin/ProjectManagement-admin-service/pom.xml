@@ -118,7 +118,7 @@
                     <archive>
                         <manifest>
                             <!-- 将入口类添加到 MANIFEST.MF 中 -->
-                            <mainClass>com.sparks.jnote.JnoteServiceApplication</mainClass>
+                            <mainClass>com.sparks.Projectmanagementadminservice.ProjectManagementAdminServiceApplication</mainClass>
                             <useUniqueVersions>false</useUniqueVersions>
                             <!-- 将项目的依赖信息添加到 MANIFEST.MF 中 -->
                             <addClasspath>true</addClasspath>
