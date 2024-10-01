@@ -9,7 +9,9 @@
       <span style="font-size: 20px;">ProjectManagement -自动化部署流水线</span>
     </div>
     <div style="width: 400px;background-color: white;">
-      <router-view />
+      <transition name="el-fade-in-linear">
+        <router-view />
+      </transition>
     </div>
   </div>
 </template>

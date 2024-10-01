@@ -49,7 +49,7 @@ const form = reactive({
 });
 
 const login = () => {
-        if (!form.username || !form.password){
+        if (!(form.username && form.password)){
           ElMessage.warning("请输入用户名或密码！");
           return;
         }
